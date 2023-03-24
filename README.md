@@ -1,2 +1,65 @@
-# arbitrum-claim-send
-This repo is designed to claim Arbitrum (ARB) tokens from a smart contract and send them to a specified recipient address.
+# Arbitrum Claim and Send ARB
+
+This project is designed to claim Arbitrum (ARB) tokens from a smart contract and send them to a specified recipient address. It uses the worker_threads module to run the `claimAndSendARB` function in a separate thread and interacts with the Arbitrum blockchain using Web3.js.
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/) (version 14 or higher)
+- [Web3.js](https://github.com/ChainSafe/web3.js/) (version 1.x)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/codeesura/arbitrum-claim-send.git
+cd arbitrum-claim-send
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+## Configuration
+
+1. Update the `provider` variable with your Arbitrum node URL.
+
+```javascript
+const provider = 'http://your-node-url:8545/';
+```
+
+2. Set the required contract addresses and private keys in the `addresses` array. Replace the placeholder values with your actual data.
+
+```javascript
+const addresses = [
+  {
+    armut: 'armut',
+    senderAddress: 'senderAddress',
+    armutPrivateKey: 'armutPrivateKey',
+    senderPrivateKey: 'senderPrivateKey',
+    claimAmount: 3750,
+  },
+];
+```
+
+3. Update the recipient address to receive the ARB tokens.
+
+
+## Usage
+
+Run the main script:
+
+```bash
+node index.js
+```
+
+This script will monitor the blockchain and wait for a specific block number. When that block number is reached, it will start the claiming process by executing the `claimAndSendARB` function in a separate thread for each address in the addresses array.
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
