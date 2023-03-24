@@ -62,4 +62,4 @@ This script will monitor the blockchain and wait for a specific block number. Wh
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/codeesura/arbitrum-claim-send/blob/main/LICENSE) - see the LICENSE file for details.
