@@ -59,6 +59,14 @@ node index.js
 
 This script will monitor the blockchain and wait for a specific block number. When that block number is reached, it will start the claiming process by executing the `claimAndSendARB` function in a separate thread for each address in the addresses array.
 
+## Results
+
+![image](https://user-images.githubusercontent.com/120671243/227720825-cf359655-3d01-4a48-9772-f32a7a90785d.png)
+
+https://twitter.com/codeesura/status/1639238246268907520
+
+https://twitter.com/codeesura/status/1639366290635620355
+
 
 ## License
 
