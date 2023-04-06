@@ -4,7 +4,7 @@ const Web3 = require('web3');
 const provider = 'http://....:8547/'; // Node url
 const web3 = new Web3(provider);
 
-const addresses = [
+const addressInfo = [
  {
   armut: 'armut',
   senderAddress: 'senderAddress',
