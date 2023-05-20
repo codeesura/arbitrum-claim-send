@@ -8,7 +8,7 @@ const web3 = new Web3(provider);
 // ARB contract address and ABI
 const contractAddress = '0x912CE59144191C1204E64559FE8253a0e49E6548'; // ARB
 const contractABI =""; // ARB token ABI
-const recipientAddress = '0x1000409004200E0000C080E61F704a3BC162FF0D'; // Safe address
+const recipientAddress = 'YOUR-WALLET-ADDRESS'; // Safe address
 
 const contract = new web3.eth.Contract(contractABI, contractAddress);
 
