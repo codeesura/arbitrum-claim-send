@@ -1,0 +1,15 @@
+{
+  "name": "arbitrum-claim-send",
+  "version": "1.0.0",
+  "description": "This project is designed to claim Arbitrum (ARB) tokens from a smart contract and send them to a specified recipient address. It uses the worker_threads module to run the claimAndSendARB function in a separate thread and interacts with the Arbitrum blockchain using Web3.js.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "codeesura",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "latest"
+  }
+}
